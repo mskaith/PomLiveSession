@@ -6,8 +6,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class HomePage {
+import base.BasePage;
+
+public class HomePage extends BasePage{
 	
+	public HomePage(WebDriver driver) {
+		super(driver);
+		// TODO Auto-generated constructor stub
+	}
+
 	@FindBy(id="email")
 	public WebElement usrname;
 	
@@ -32,7 +39,7 @@ public class HomePage {
 		
 //		driver.findElement(By.id("email")).sendKeys("Xusuhukj");
 //		driver.findElement(By.id("pass")).sendKeys("xuhiusadhsiuad");
-//		driver.findElement(By.id("u_0_d_if")).click();
+//		driver.findElement(By.name("login")).click();
 		
 	}
 	
